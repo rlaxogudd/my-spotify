@@ -1,0 +1,77 @@
+.sidebar{
+  background-color: black;
+  height: 430px;
+  width: 85px;
+  margin-right: 6px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.library-pic-box{
+  background-color: black;
+  height: 40px;
+  width: 62px;
+  position: fixed;
+  justify-content: center;
+  z-index: 1;
+}
+
+.library-pic{
+  height: 30px;
+  width: 30px;
+  margin-left: 14px;
+  margin-top: 7px;
+}
+
+.library-playlists{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.playlist-pic-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 61px;
+  width: 61px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.playlist-pic-box:hover{
+  background-color: rgb(69, 69, 69);
+  cursor: pointer;
+}
+
+.playlist-pic{
+  height: 55px;
+  width: 55px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+
+.library-pic-box .tooltip{
+  position: absolute;
+  background-color: grey;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom:-20px;
+  
+  opacity: 0;
+  transition: 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+  font-family: Arial;
+
+}
+
+.library-pic-box:hover .tooltip{
+  opacity: 1;
+}

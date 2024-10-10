@@ -1,0 +1,175 @@
+.bottom-header{
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  height: 60px;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.b-header-left{
+  display: flex;
+  flex-direction: row;
+  margin-left: 12px;
+  margin-top: 5px;
+  width: 200px;
+}
+
+.img10{
+  height: 50px;
+  widows: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.song-info{
+  margin-left: 8px;
+  margin-top: 5px;
+  font-family: "Exo 2";
+  font-weight: bold;
+}
+
+.song-name{
+  color: azure;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.song-name:hover,
+.singer:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.aa{
+  height: 17px;
+  width: 17px;
+  margin-top: 17px;
+  margin-left: 15px;
+}
+
+.aa:hover{
+  height: 19px;
+  width: 19px;
+  cursor: pointer;
+}
+
+.singer{
+  margin-top: 2px;
+  font-size: 12px;
+  color: rgb(179, 179, 179);
+}
+
+.b-header-middle{
+  display: flex;
+  flex-direction: column;
+  margin-left: -30px;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+  margin-top: 8px;
+}
+.a{
+  height: 25px;
+  width: 25px;
+  padding: 0 4px;
+}
+
+.alt{
+  display: flex;
+  flex-direction: row;
+  font-family: "Exo 2";
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: -80px;
+}
+
+.a1{
+  background-color: rgb(44, 197, 82);
+  height: 6px;
+  width: 50px;
+  border-radius: 3px 0 0 3px;
+  margin-top: 10px;
+}
+
+.a2{
+  background-color: rgb(132, 132, 132);
+  height: 6px;
+  width: 250px;
+  border-radius: 0 3px 3px 0;
+  margin-top: 10px;
+}
+
+.a3{
+  padding: 5px;
+  margin-top:-1px;
+  margin-right: 5px;
+  color: rgb(179, 179, 179);
+}
+
+.b-header-right{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+  margin-top: 20px;
+  margin-left: -200px;
+  margin-right: 20px;
+}
+
+.img11,
+.img12,
+.img13,
+.img14,
+.img16{
+  height: 24px;
+  width: 24px;
+}
+
+.img15{
+  height: 8px;
+  width: 120px;
+  margin-top: 8px;
+  margin-left: -10px;
+}
+
+.aa-box .tooltip,
+.a-box .tooltip,
+.img11-box .tooltip,
+.img12-box .tooltip,
+.img13-box .tooltip,
+.img14-box .tooltip,
+.img16-box .tooltip{
+  position: absolute;
+  background-color: grey;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  top: -15px;
+  margin-left: -10px;
+  opacity: 0;
+  transition: 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+  font-family: Arial;
+}
+
+.aa-box:hover .tooltip,
+.a-box:hover .tooltip,
+.img11-box:hover .tooltip,
+.img12-box:hover .tooltip,
+.img13-box:hover .tooltip,
+.img14-box:hover .tooltip,
+.img16-box:hover .tooltip{
+  opacity: 1;
+}

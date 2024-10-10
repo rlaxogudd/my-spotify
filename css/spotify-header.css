@@ -1,0 +1,163 @@
+body{
+  background-color: rgb(44, 44, 44);
+}
+.header{
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  position: fixed;
+  height: 50px;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-left{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+  margin-top: 9px;
+  margin-left: 5px;
+}
+
+.img1,
+.img2,
+.img3,
+.img4{
+  height: 25px;
+  width: 25px;
+  position: relative;
+  margin-right: 4px;
+}
+
+.img4{
+  height: 28px;
+  width: 28px;
+  background-color: rgb(70, 70, 70);
+  border-radius: 30px;
+}
+
+.header-middle{
+  display: flex;
+  flex-direction: row;
+  margin-left: 200px;
+  margin-right: 270px;
+}
+.img5,
+.img6{
+  margin-top: 8px;
+  position: relative;
+}
+
+.img5{
+  background-color: rgb(58, 58, 58);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 27px;
+  width: 27px;
+}
+
+.img6{
+  background-color: rgb(58, 58, 58);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 27px;
+  width: 27px;
+  padding-right: 12px;
+
+}
+
+.search{
+  background-color: rgb(58, 58, 58);
+  height: 35px;
+  width: 370px;
+  margin-top: 8px;
+  border-style: none;
+  outline-style: none;
+  color: rgb(135, 130, 130);
+}
+
+.header-right{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 170px;;
+  margin-top: 12px;
+  
+}
+
+.img7{
+  height: 28px;
+  width: 28px;
+  padding: 7px;
+  margin-top: -5px;
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover,
+.img7:hover,
+.img9:hover,
+.img8:hover{
+  background-color: rgb(57, 57, 57);
+}
+
+.img8{
+  height: 35px;
+  width: 35px;
+  margin-top: -4px;
+  padding: 3px;
+  margin-right: 10px;
+}
+
+.img9{
+  height: 38px;
+  width: 38px;
+  object-fit: cover;
+  border-radius: 19px;
+  margin-top: -5px;
+}
+
+.right-section{
+  background-color: lightblue;
+  margin-top: 47px;
+  width: 420px;
+}
+
+.img1 .tooltip,
+.img2 .tooltip,
+.img3 .tooltip,
+.img4 .tooltip,
+.img5 .tooltip,
+.img6 .tooltip,
+.img7-box .tooltip,
+.img8-box .tooltip,
+.img9-box .tooltip{
+  position: absolute;
+  background-color: grey;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  margin-left: -5px;
+  opacity: 0;
+  transition: 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+  font-family: Arial;
+}
+
+.img1:hover .tooltip,
+.img2:hover .tooltip,
+.img3:hover .tooltip,
+.img4:hover .tooltip,
+.img5:hover .tooltip,
+.img6:hover .tooltip,
+.img7-box:hover .tooltip,
+.img8-box:hover .tooltip,
+.img9-box:hover .tooltip{
+  opacity: 1;
+}
